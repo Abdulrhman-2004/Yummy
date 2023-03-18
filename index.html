@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="shortcut icon" href="img/logo.png"> -->
+    <title>Yummy</title>
+</head>
+
+<body>
+
+    <div id="loding">
+        <div class="loding d-flex justify-content-center align-items-center vh-100">
+            <span class="loader"></span>
+        </div>
+    </div>
+
+    <section class="">
+        <div class="nav" id="nav">
+            <div class="nav-1" id="nav-1">
+                <div class="nav-1-links " id="navlinks">
+                    <ul class="list-unstyled  fs-4 ">
+                        <li class="py-2" onclick="closeNav(); search();lood()">Search</li>
+                        <li class="py-2" onclick="getCategory();closeNav();lood()">categories </li>
+                        <li class="py-2" onclick="getCArea();closeNav();lood()">Area </li>
+                        <li class="py-2" onclick="closeNav(); Ingredients();lood()">Ingredients </li>
+                        <li class="py-2" onclick="closeNav();lood() ; showContacts()" id="Contact">Contact Us </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-2 ">
+                <div class="navImg">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center align-items-center h-75">
+                    <div class="nav-2-icon  d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-bars fs-1" id="closeIcon"></i>
+                    </div>
+                </div>
+                <div class="icons text-center text-dark">
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes "></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section1" class="">
+        <div class="container pt-4">
+            <div class="row " id="rowIntro">
+
+            </div>
+        </div>
+    </section>
+    <section class="d-none" id="section2">
+        <div class="container pt-4">
+            <div class="d-flex justify-content-end  align-items-center pe-3">
+                <i class="fa-solid fa-xmark fs-1 " id="Xmark"></i>
+            </div>
+            <div class="row " id="rowDetails">
+
+            </div>
+        </div>
+    </section>
+    <section id="section3" class=" d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <input type="text" class="form-control   bg-dark text-white" placeholder="search By Name..."
+                        oninput="searchByName(this.value)">
+                </div>
+                <div class="col-md-6 mt-5">
+                    <input type="text" class="form-control  bg-dark text-white " placeholder="search By first Letter..."
+                        oninput="searchByfirstLetter(this.value)">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container">
+        <div class="row" id="rowS">
+
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
