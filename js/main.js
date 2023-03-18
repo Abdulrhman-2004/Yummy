@@ -313,7 +313,12 @@ async function filtrIngredients(a) {
 
 /***************/
 function showContacts() {
-    rowData.innerHTML = `<div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+    rowS.classList.remove('d-none');
+    section1.classList.add('d-none');
+    section2.classList.add('d-none');
+    section3.classList.add('d-none');
+
+    rowS.innerHTML = `<div class="contact min-vh-100 d-flex justify-content-center align-items-center">
     <div class="container w-75 text-center">
         <div class="row g-4">
             <div class="col-md-6">
